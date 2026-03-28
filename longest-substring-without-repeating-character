@@ -1,0 +1,38 @@
+//longest-substring-without-repeating-character
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+          
+     System.out.println(longestsubstring("abbaaabmccd"));
+     
+    }
+    
+    public static String longestsubstring(String s)
+    {   int n=s.length();
+         String longsub="";
+         int maxlen=0;
+         
+       for(int i=0; i<n;i++)
+       {
+           boolean visited[]= new boolean[256];
+           for(int j=i; j<n;j++)
+           {
+               if(visited[s.charAt(j)])
+               break;
+               else
+               {
+                   visited[s.charAt(j)]=true;
+                   int len=j-i+1;
+                   if(len>maxlen)
+                   {maxlen=len;
+                   longsub=s.substring(i, j+1);
+                    
+                   }
+               }
+           }
+       }
+       
+      return longsub; 
+        
+    }
+}
