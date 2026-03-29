@@ -1,4 +1,5 @@
-# java-string-array-problems
+# array-string-coding-challenges
+
 
 This repository contains my solutions to common string and array problems in Java.  
 It covers challenges such as string manipulation, searching, sorting, and array operations.  
