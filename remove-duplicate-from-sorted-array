@@ -1,0 +1,26 @@
+// Remove duplicate from a sorted Array 
+
+
+class Main {
+    public static void main(String[] args) {
+      int arr[]= {1,2,2,3,4,4};  
+      removeDuplicate(arr);
+    }
+    
+    public static void removeDuplicate(int[] arr)
+    {    int n=arr.length;
+          int rd=0;
+       
+        for(int i=1; i<n; i++)
+        {
+            if(arr[i]!=arr[rd])
+            rd++;
+            arr[rd]=arr[i];
+        }
+        
+        for(int i=0; i<=rd; i++)
+        {  System.out.print(arr[i]+" ");}
+        
+    }
+    
+}
