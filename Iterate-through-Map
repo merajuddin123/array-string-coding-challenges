@@ -1,0 +1,22 @@
+// Iterate through Map
+
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Map<String, Integer> map=new HashMap<>();
+        map.put("Meraj", 12345);
+        map.put("Ahmad", 123465);
+        map.put("Zara", 1234);
+        
+        
+        for(Map.Entry<String,Integer> entry: map.entrySet())
+        {
+            System.out.println(entry.getKey()+" : "+ entry.getValue());
+        }
+        
+        
+        
+        
+    }
+}
